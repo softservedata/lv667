@@ -3,15 +3,9 @@ package com.softserve.edu.classwrok;
 public class Appl {
 	private int i = 123;
 
-	// Default constructor Appl() added by JDK, if any not exist
-
-//	public Appl(int i0) {
-//		i = i0;
-//	} 
-
 	public void myprint() {
 		System.out.println("Appl i = " + i); // i convert toString()
-		// main(new String[]{"dd", "ff"});
+
 	}
 
 	public static void main(String[] args) {
@@ -34,7 +28,6 @@ public class Appl {
 		//
 		byte k = 49;
 		System.out.println("k = " + k + "  char of k = " + (char) k);
-		k = (byte) (k + 1);
 	}
 
 }
