@@ -15,7 +15,7 @@ public class Appl {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Hello");
+		System.out.println("Hello W");
 		//
 		int i = 456;
 		System.out.println("main i= " + i);
