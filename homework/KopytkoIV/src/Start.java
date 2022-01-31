@@ -3,6 +3,7 @@ public class Start {
 
         Message mess = new Message();
         mess.speak();
+
         Amount sol = new Amount();
         sol.solution();
 
