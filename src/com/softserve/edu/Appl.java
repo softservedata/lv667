@@ -16,6 +16,7 @@ public class Appl {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World");
+		System.out.println("Dev");
 		//
 		int i = 456;
 		System.out.println("main i= " + i);
