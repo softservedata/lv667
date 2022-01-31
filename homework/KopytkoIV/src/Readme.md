@@ -1,1 +1,1 @@
-This is my practical work on java
+This is my practical work on java core
