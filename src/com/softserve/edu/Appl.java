@@ -1,5 +1,8 @@
 package com.softserve.edu;
 
+/**
+ * Class Appl.
+ */
 public class Appl {
 	private int i = 123;
 
@@ -36,6 +39,11 @@ public class Appl {
 		byte k = 49;
 		System.out.println("k = " + k + "  char of k = " + (char) k);
 		k = (byte) (k + 1);
+		//
+		com.softserve.edu01.A a = new com.softserve.edu01.A();
+		System.out.println("a = " + a); // toString();
+		com.softserve.edu02.A a2 = new com.softserve.edu02.A();
+		System.out.println("a2 = " + a2); // toString();
 	}
 
 }
