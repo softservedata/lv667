@@ -1,3 +1,5 @@
+package com.softserve.edu.hw1;
+
 import java.util.Objects;
 import java.util.Scanner;
 
