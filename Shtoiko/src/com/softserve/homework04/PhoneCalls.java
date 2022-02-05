@@ -1,6 +1,8 @@
 package com.softserve.homework04;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
+
 import static java.lang.Math.abs;
 
 public class PhoneCalls {
@@ -10,23 +12,25 @@ public class PhoneCalls {
         Scanner scanner = new Scanner(System.in);
         int[] callsCost = new int[quantityOfCalls];
         int[] talks = new int[quantityOfCalls];
-        for(int i = 1; i <= quantityOfCalls; i++) {
-            System.out.println("Input quantity standard units per minute for calls №" + i);
-            callsCost[i - 1] = abs(scanner.nextInt());
-        }
-        for(int i = 1; i <= quantityOfCalls; i++) {
-            System.out.println("Input talks continued for calls №" + i);
-            talks[i - 1] = abs(scanner.nextInt());
+        int[] sum = new int[quantityOfCalls];
+        for (int i = 1; i <= quantityOfCalls; i++) {
+            try {
+                System.out.println("Input quantity standard units per minute for calls №" + i);
+                callsCost[i - 1] = abs(scanner.nextInt());
+                System.out.println("Input talks continued for calls №" + i);
+                talks[i - 1] = abs(scanner.nextInt());
+                sum[i - 1] = callsCost[i - 1] * talks[i - 1];
+                total += sum[i - 1];
+            } catch (InputMismatchException exception) {
+                System.out.println("Incorrect input! " + exception);
+            }
         }
         System.out.println("                units \r\n             per minute:   continued:      price:");
-        for(int i = 1; i <= quantityOfCalls; i++) {
-            int sum = callsCost[i - 1] * talks[i - 1];
-            System.out.println(String.format("Call №%s   %10s   %10s     %10s",
-                    i, callsCost[i - 1], talks[i - 1], sum));
-
-                    System.out.println("-------------------------------------------------------");
-            total += sum;
+        for (int i = 1; i <= quantityOfCalls; i++) {
+            System.out.printf("Call №%s   %10s   %10s     %10s%n",
+                    i, callsCost[i - 1], talks[i - 1], sum[i - 1]);
+            System.out.println("-------------------------------------------------------");
         }
-        System.out.println(String.format("Total:                                    %6s", total));
+        System.out.printf("Total:                                    %6s%n", total);
     }
 }
