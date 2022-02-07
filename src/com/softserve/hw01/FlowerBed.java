@@ -30,7 +30,6 @@ public class FlowerBed {
     private double calculatePerimeter(int radius) {
         return 2 * Math.PI * radius;
     }
-
     private double calculateArea(int radius) {
         return Math.PI * Math.pow(radius, 2);
     }
