@@ -15,12 +15,10 @@ public class Flowerbed {
     }
 
     public double getPerimeter(){
-
         return 2*Math.PI*radius;
     }
 
     public double getArea(){
-
         return Math.PI* Math.pow(radius,2);
     }
 }

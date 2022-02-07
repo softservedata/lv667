@@ -24,7 +24,6 @@ public class Questionnaire {
         setName(sc.nextLine());
         System.out.println("Where are you live, "+ getName() +"?");
         setAddress(sc.nextLine());
-        sc.close();
     }
 
     @Override
