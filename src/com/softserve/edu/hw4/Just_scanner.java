@@ -25,6 +25,16 @@ public class Just_scanner {
         }
         return inputData(0.0f);
     }
-
+    static int inputData(int i) {
+        Scanner currentValue = new Scanner(System.in);
+        while (currentValue.hasNext()) {
+            if (currentValue.hasNextInt()) {
+                return currentValue.nextInt();
+            }
+            System.out.println(currentValue.next() + " isn't integer. E.g. type 15 or 10");
+            return inputData(0);
+        }
+        return inputData(0);
+    }
 
 }
