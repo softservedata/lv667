@@ -11,7 +11,10 @@ public class H4r {
         String name = br.readLine();
         System.out.println("How old are you?");
         int age = Integer.parseInt(br.readLine());
+        System.out.println("How are you my friend?");
+        String friend = br.readLine();
         System.out.println("Hello " + name);
         System.out.println("Your are " + age);
+        System.out.println("Good " + name + " i'm glad for you");
     }
 }
