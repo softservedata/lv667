@@ -1,4 +1,4 @@
-package com.softserve.edu_01;
+package com.softserve.edu_04;
 
 public class Homework_04 {
     @Override
