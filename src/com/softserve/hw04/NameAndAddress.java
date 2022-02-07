@@ -2,7 +2,7 @@ package com.softserve.hw04;
 
 import java.util.Scanner;
 
-public class Name_and_address {
+public class NameAndAddress {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
