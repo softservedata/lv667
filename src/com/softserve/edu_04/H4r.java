@@ -16,5 +16,6 @@ public class H4r {
         System.out.println("Hello " + name);
         System.out.println("Your are " + age);
         System.out.println("Good " + name + " i'm glad for you");
+        br.close();
     }
 }
