@@ -21,7 +21,6 @@ public class PhoneCalls {
                 + t + "\nCost: " + cost);
         return cost;
     }
-
     public void costOfCalls() {
         int tc1 = getCost();
         int tc2 = getCost();
@@ -33,7 +32,6 @@ public class PhoneCalls {
 //        for (int i = 0; i < 3; i++) {
 //            totalCost += getCost(); // the same as: totalCost = totalCost + getCost();
 //        }
-
         System.out.println("\nTotal cost for all countries: " + totalCost);
         sc.close();
     }

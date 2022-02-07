@@ -1,6 +1,7 @@
 package com.softserve.hw01;
 
 import java.util.Scanner;
+
 public class NameAndAddress {
     public void findOutNameAndAddress (){
         String name;

@@ -12,6 +12,7 @@ public class FlowerBed {
         System.out.println("Write the radius");
         r = Integer.parseInt(sc.nextLine());
         System.out.println("Radius: " + r);
+
         //perimeter = 2 * pi * r;
         //square = pi * Math.pow(r, 2);
         //System.out.println("Perimeter = " + Precision.round(perimeter, 2));
