@@ -17,7 +17,7 @@ public class Main {
 //         nameAndAddress.findOutNameAndAddress();
 //         // new NameAndAddress().findOutNameAndAddress();
 
-//        PhoneCalls phoneCalls = new PhoneCalls();
-//        phoneCalls.costOfCalls();
+//         PhoneCalls phoneCalls = new PhoneCalls();
+//         phoneCalls.costOfCalls();
     }
 }
