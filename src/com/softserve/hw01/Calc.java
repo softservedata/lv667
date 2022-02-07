@@ -22,7 +22,6 @@ import java.util.Scanner;
             double division = a / b;
             System.out.print("\r\na / b = ");
             System.out.format("%.3f", division);
-
             sc.close();
         }
     }
