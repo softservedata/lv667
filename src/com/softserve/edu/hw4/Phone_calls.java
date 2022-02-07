@@ -21,9 +21,9 @@ public class Phone_calls {
         }
         iter = 0;
         for(float i : rate_call) {
-            System.out.println("Total cost " + call[iter] + " = " +durationC[iter] * rate_call[iter++]);
+            System.out.println("Total cost " + call[iter] + " = "  + new DecimalFormat("$##.##").format(durationC[iter] * rate_call[iter++]));
         }
         System.out.println("Total duration " + total_duration + " minutes");
-        System.out.println("Total coast " + total_coast);
+        System.out.println("Total coast " + new DecimalFormat("$##.##").format(total_coast));
     }
 }
