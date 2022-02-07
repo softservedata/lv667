@@ -9,7 +9,6 @@ public class PhoneCalls {
         int c;
         int t;
         String nameCountry;
-
         System.out.println("\nEnter the name of the country: ");
         nameCountry = sc.nextLine();
         System.out.println("Enter call price in " + nameCountry);
