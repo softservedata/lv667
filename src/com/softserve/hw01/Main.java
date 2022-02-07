@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         FlowerBed flowerBed = new FlowerBed();
         flowerBed.calculateAreaAndPerimeter();
-//        // new FlowerBed().calculateAreaAndPerimeter();
+        // new FlowerBed().calculateAreaAndPerimeter();
 
 //         NameAndAddress nameAndAddress = new NameAndAddress();
 //         nameAndAddress.findOutNameAndAddress();
-         // new NameAndAddress().findOutNameAndAddress();
+//         // new NameAndAddress().findOutNameAndAddress();
 
 //        PhoneCalls phoneCalls = new PhoneCalls();
 //        phoneCalls.costOfCalls();
