@@ -2,7 +2,7 @@ package com.softserve.edu.hm4;
 
 public class Flowerbed {
     private Integer radius;
-    public Integer getRadius() {
+    private Integer getRadius() {
         return radius;
     }
 
