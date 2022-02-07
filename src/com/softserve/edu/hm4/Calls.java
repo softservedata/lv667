@@ -16,10 +16,7 @@ public class Calls {
     public float getPriceENG() {return priceENG;}
     public void setPriceENG(float value) { this.priceENG = value;}
     public float getTimeTalkUA(){return timeTalkUA;}
-
-    public void setTimeTalkUA(float value){
-                this.timeTalkUA = value;
-    }
+    public void setTimeTalkUA(float value){this.timeTalkUA = value;}
     public float getTimeTalkPL() {return timeTalkPL;}
     public void setTimeTalkPL(float value) {this.timeTalkPL = value;}
     public float getTimeTalkENG() {return timeTalkENG;}
