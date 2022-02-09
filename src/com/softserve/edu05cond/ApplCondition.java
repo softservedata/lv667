@@ -136,7 +136,7 @@ public class ApplCondition {
         System.out.println("ter1: " + result);
         System.out.println("ter2: " + (temperature < 10 ? "It is too cold" : "It is Ok") );
         */
-        //
+        /*-
         boolean isLeap;
         //int year = 1900;
         int year = 2000;
@@ -150,8 +150,8 @@ public class ApplCondition {
             isLeap = false;
         }
         System.out.println("isLeap = " + isLeap);
-        //
-        /*-
+        */
+        // /*-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Do you enjoy Java? (yes/no/maybe): ");
         String input = br.readLine();
@@ -180,6 +180,6 @@ public class ApplCondition {
         } else {
         	System.out.println("Wrong! 2");
         }
-        */
+        // */
     }
 }
