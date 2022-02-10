@@ -1,5 +1,4 @@
-package com.softserve.edu.hm4;
-import java.util.InputMismatchException;
+package com.softserve.edu.hm1;
 
 public class Calls {
     //Class variables

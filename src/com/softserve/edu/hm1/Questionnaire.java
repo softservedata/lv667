@@ -1,4 +1,4 @@
-package com.softserve.edu.hm4;
+package com.softserve.edu.hm1;
 import java.util.Scanner;
 
 public class Questionnaire {

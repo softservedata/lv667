@@ -1,4 +1,4 @@
-package com.softserve.edu.hm4;
+package com.softserve.edu.hm1;
 
 public class Flowerbed {
     private Integer radius;
