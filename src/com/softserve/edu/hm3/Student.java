@@ -15,8 +15,8 @@ public class Student {
 
     // constructors
     Student(String name, double rating){
-        setName(name);
-        setRating(rating);
+        this.name=name;
+        this.rating=rating;
         studentsCnt+=1;
         totalRatings+=getRating();
         avgRating=totalRatings/studentsCnt;

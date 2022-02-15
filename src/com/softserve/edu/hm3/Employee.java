@@ -17,14 +17,14 @@ public class Employee {
     }
 
     Employee(String name, int rate){
-        setName(name);
-        setRate(rate);
+        this.name=name;
+        this.rate=rate;
     }
 
     Employee(String name, int rate, double hours){
-        setName(name);
-        setRate(rate);
-        setHours(hours);
+        this.name=name;
+        this.rate=rate;
+        this.hours=hours;
     }
 
     @Override
@@ -39,14 +39,10 @@ public class Employee {
     public double getSalary(){
         return getRate()*getHours();
     }
-
     public double getBonuses(){
-        return getSalary()*1.1;
+        return getSalary()*0.1;
     }
-
-    public void changeRate(int rate){
-        setRate(rate);
-    }
+    public void changeRate(int rate){setRate(rate);}
 
     public static void main(String[] args) {
         Employee javaDev = new Employee("Mark",4500, 40);
