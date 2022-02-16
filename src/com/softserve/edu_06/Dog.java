@@ -9,9 +9,18 @@ package com.softserve.edu_06;
 //        Check if there is no two dogs with the same name.
 //Display the name and the kind of the oldest dog.
 public class Dog {
-    private String dog;
-    public static Dog name = new Dog("name");
-    public static Dog breed = new Dog("breed");
-    public static Dog age = new Dog("age");
-    private Dog(String dog) { this.dog = dog; }
+    enum Breed {
+        German_Shepherd,
+        Husky,
+        Retriever
+    }
+    public String Name;
+    public int Age;
+    Breed breed;
+
+    public Dog (String Name, int Age, Breed type) {
+        this.Name = Name;
+        this.Age = Age;
+        breed = type;
+    }
 }
