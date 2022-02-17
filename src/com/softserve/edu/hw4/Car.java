@@ -9,9 +9,9 @@ public class Car {
     // Display cars certain model year  (enter year in the console);
     //ordered by the field year.
 
-    protected String type;
+    private String type;
     private int year;
-    protected int power;
+    private int power;
 
     public Car(String type, int year, int power) {
         this.type = type;
@@ -50,7 +50,7 @@ public class Car {
 
 
     public static void main(String[] args) {
-        Car car1 = new Car("Jeep", 1994, 175);
+        Car car1 = new Car("Jeep", 1998, 175);
         Car car2 = new Car("Truck", 2002, 653);
         Car car3 = new Car("Golf car", 1998, 60);
         Car car4 = new Car("Minivan", 2011, 210);
@@ -74,7 +74,7 @@ public class Car {
                 b = false;
             }
             if (a == car3.year) {
-                System.out.println(car1.toString());
+                System.out.println(car3.toString());
                 b = false;
             }
             if (a == car4.year) {

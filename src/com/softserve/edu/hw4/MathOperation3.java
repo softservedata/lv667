@@ -14,7 +14,8 @@ public class MathOperation3 {
 
         int a = 0;
         int[] arr = new int[5];
-        int countOfSecondPositiveNum = 0;
+        int count = 0;
+        int numberOfSecondPositiveNum = 0;
         int min = arr[0];
         int positionOfMinimalNum = 0;
 
@@ -28,19 +29,22 @@ public class MathOperation3 {
         System.out.println();
         for (int k = 0; k < arr.length; k++) {
             if (arr[k] > 0) {
-                countOfSecondPositiveNum++;
+                count++;
+                numberOfSecondPositiveNum = k;
+            } else {
+                continue;
             }
 
         }
-        switch (countOfSecondPositiveNum){
+        switch (count) {
             case 0:
                 System.out.println("There is no one positive numbers");
                 break;
             case 1:
-                System.out.println("There is only one positive numbers and his position is "+ countOfSecondPositiveNum);
+                System.out.println("There is only one positive numbers and his position is " + numberOfSecondPositiveNum);
                 break;
             case 2:
-                System.out.println("Position of second positive number is "+countOfSecondPositiveNum);
+                System.out.println("Position of second positive number is " + numberOfSecondPositiveNum);
                 break;
 
         }
