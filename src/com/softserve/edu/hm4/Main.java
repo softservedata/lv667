@@ -34,19 +34,19 @@ public class Main {
                 new Dog("Chuky", 5,Breed.POODLE),
                 new Dog("Rocky", 8,Breed.SHIBA_INU),
                 new Dog("Henessy", 2,Breed.CANE_CORSO),
-                new Dog("Robb", 2,Breed.CANE_CORSO),
-                new Dog("Chuky", 2,Breed.CANE_CORSO));
+                new Dog("Robb", 2,Breed.ROTTWEILER),
+                new Dog("Ezzy", 2,Breed.CHIHUAHUA));
 
         // solve the task by hard coding
-        boolean hasNameDuplicates = true;
+        boolean hasNameDuplicates = false;
         for(int i=0; i<=list.size()-2; i++){
             for(int j=i+1; j<=list.size()-1; j++){
                 if(list.get(j).getName() == list.get(i).getName()){
-                    hasNameDuplicates = false;
+                    hasNameDuplicates = true;
                 }
             }
         }
-        System.out.printf("The Statement that there are no two dogs with the same name is %b",hasNameDuplicates);
+        System.out.printf("\nThe Statement that there are two dogs with the same name is %b",hasNameDuplicates);
 
         // Display the name and the kind of the oldest dog.
         int pos=0;
@@ -57,7 +57,6 @@ public class Main {
                 pos=i;
             }
         }
-
         System.out.println("\nthe oldest Dog is: " + list.get(pos).toString());
     }
 }
