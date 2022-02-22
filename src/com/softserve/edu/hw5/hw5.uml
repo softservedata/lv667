@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.softserve.edu.hw5</OriginalElement>
+  <nodes>
+    <node x="416.0" y="627.0">com.softserve.edu.hw5.Main</node>
+    <node x="37.00657894736838" y="0.0">com.softserve.edu.hw5.Car</node>
+    <node x="811.0" y="0.0">com.softserve.edu.hw5.NumberOfMonth</node>
+    <node x="530.5" y="0.0">com.softserve.edu.hw5.CustomArray</node>
+    <node x="271.0" y="0.0">com.softserve.edu.hw5.FirstFive</node>
+    <node x="-61.24342105263162" y="372.0">com.softserve.edu.hw5.Garage</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.softserve.edu.hw5.Main" target="com.softserve.edu.hw5.NumberOfMonth" relationship="CREATE">
+      <point x="0.0" y="-41.5" />
+      <point x="503.0" y="584.0" />
+      <point x="975.5" y="584.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.softserve.edu.hw5.Main" target="com.softserve.edu.hw5.Garage" relationship="CREATE">
+      <point x="0.0" y="-41.5" />
+      <point x="503.0" y="584.0" />
+      <point x="64.25657894736838" y="584.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="com.softserve.edu.hw5.Main" target="com.softserve.edu.hw5.CustomArray" relationship="CREATE">
+      <point x="0.0" y="-41.5" />
+      <point x="503.0" y="584.0" />
+      <point x="660.5" y="584.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="com.softserve.edu.hw5.Garage" target="com.softserve.edu.hw5.Car" relationship="TO_MANY">
+      <point x="62.75" y="-78.5" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="com.softserve.edu.hw5.Main" target="com.softserve.edu.hw5.Car" relationship="CREATE">
+      <point x="0.0" y="-41.5" />
+      <point x="503.0" y="584.0" />
+      <point x="261.5" y="584.0" />
+      <point x="261.5" y="274.0" />
+      <point x="187.00657894736838" y="274.0" />
+      <point x="60.0" y="126.5" />
+    </edge>
+    <edge source="com.softserve.edu.hw5.Garage" target="com.softserve.edu.hw5.Car" relationship="DEPENDENCY">
+      <point x="-62.75" y="-78.5" />
+      <point x="1.5065789473683822" y="284.0" />
+      <point x="67.00657894736838" y="284.0" />
+      <point x="-60.0" y="126.5" />
+    </edge>
+    <edge source="com.softserve.edu.hw5.Main" target="com.softserve.edu.hw5.FirstFive" relationship="CREATE">
+      <point x="0.0" y="-41.5" />
+      <point x="503.0" y="572.0" />
+      <point x="385.0" y="572.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="564.5" y="346.5" />
+  <SelectedNodes>
+    <node>com.softserve.edu.hw5.Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
