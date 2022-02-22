@@ -29,3 +29,5 @@
 - Consist of:
     - Car
     - Garage
+
+![ScreenShot](uml_class_diag.png)
