@@ -1,6 +1,7 @@
 package com.softserve.edu.hm1;
 
 public class Calls {
+
     //Class variables
     private float priceUA;      // priceUA
     private float pricePL;      // pricePL
@@ -30,19 +31,16 @@ public class Calls {
         setPriceENG(12.7f);
     }
 
-    // calculating result price for the call
+    // Calculating result price for the call
     public float calculateBillUA(){
         return getPriceUA()*getTimeTalkUA();
     }
-
     public float calculateBillPL(){
         return getPricePL()*getTimeTalkPL();
     }
-
     public float calculateBillENG(){
         return getPriceENG()*getTimeTalkENG();
     }
-
     public void getInfo(String value) {
         switch (value){
             case "UA":
