@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class Main {
     public static void main(String[] args) {
         // Solution 1.1: read 3 float numbers and check: are they all belong to the range [-5,5];
