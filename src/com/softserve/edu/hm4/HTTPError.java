@@ -7,9 +7,11 @@ public enum HTTPError {
     BAD_REQUEST(400, "BAD_REQUEST"),
     METHOD_NOT_ALLOWED(405, "Method Not Allowed");
 
+    // Private fields
     private final int errorCode;
     private final String errorTitle;
 
+    // Constructor
     HTTPError(int error,String description){
         this.errorCode=error;
         this.errorTitle=description;
