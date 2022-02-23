@@ -1,9 +1,6 @@
 package com.softserve.edu09sort;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class AppStud {
 	public static void main(String[] args) {
@@ -40,7 +37,14 @@ public class AppStud {
 		//
 		//Collections.sort(students);
 		//Collections.sort(students, new Student.ByNameAndAge());
-		students.sort(new Student.ByDestName());
+		//students.sort(new Student.ByDestName());
+		Collections.sort(students, new Comparator<Student>() {
+					@Override
+					public int compare(Student st1, Student st2) {
+						return st1.getAge() - st2.getAge();
+					}
+				}
+		);
 		//
 		//System.out.println("Sorted Arrays: " + Arrays.toString(students));
 		System.out.println("Sorted Arrays: " + students);
