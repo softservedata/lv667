@@ -34,7 +34,8 @@ public class MainFindPositionMinimumCountProduct {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter numbers: ");
         int number = sc.nextInt();
-        int product=1;
+        int product = 1;
+
         List<Integer> positiveNumbers = new ArrayList<Integer>();
         while (number > 0) {
             positiveNumbers.add(number);

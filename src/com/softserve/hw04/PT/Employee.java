@@ -16,7 +16,6 @@ public class Employee {
     public int getDepartmentNumber() {
         return departmentNumber;
     }
-
     public int getSalary() {
         return salary;
     }
@@ -26,7 +25,7 @@ public class Employee {
     }
 
     public void display() {
-        System.out.println("Name: " + name+", department number: " + departmentNumber+", Salary: " + salary);
+        System.out.println("Name: " + name + ", department number: " + departmentNumber + ", Salary: " + salary);
     }
 
 }

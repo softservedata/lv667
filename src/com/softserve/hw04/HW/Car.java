@@ -18,6 +18,6 @@ public class Car {
     }
 
     public void display() {
-        System.out.println(yearProduction+" year of production, engine capacity: " +engineCapacity);
+        System.out.println(yearProduction + " year of production, engine capacity: " + engineCapacity);
     }
 }

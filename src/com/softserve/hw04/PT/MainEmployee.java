@@ -15,6 +15,7 @@ public class MainEmployee {
         System.out.print("Enter department number: ");
         int dpNumber = sc.nextInt();
         int count = 0;
+
         for (int i = 0; i < employeeArray.length; i++) {
             if (dpNumber == employeeArray[i].getDepartmentNumber()) {
                 count++;

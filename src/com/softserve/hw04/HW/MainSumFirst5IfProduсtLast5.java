@@ -8,6 +8,7 @@ public class MainSumFirst5IfProduсtLast5 {
         int array[] = {2, -3, -4, 1, 2, 2, 4, 8, 1, 1};
         int sum = 0;
         int product = 1;
+
         for (int i = 0; i < 5; i++) {
             if (array[i] > 0)
                 sum += array[i];
