@@ -4,7 +4,6 @@ public abstract class Bird {
     private String attributes;
     private String feathers;
     private String layEggs;
-    private String Class;
 
     public Bird(String attributes, String feathers, String layEggs) {
         this.attributes = attributes;
