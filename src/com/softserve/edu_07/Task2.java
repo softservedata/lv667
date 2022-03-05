@@ -1,4 +1,4 @@
-package com.softserve.edu_7;
+package com.softserve.edu_07;
 
 import java.io.BufferedReader;
 import java.io.IOException;

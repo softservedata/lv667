@@ -4,7 +4,7 @@ position of second positive number;
 minimum and its position in the array.
 Organize entering integers until the first negative number. Count the product of all entered even numbers.
 */
-package com.softserve.edu_7;
+package com.softserve.edu_07;
 
 import java.io.BufferedReader;
 import java.io.IOException;

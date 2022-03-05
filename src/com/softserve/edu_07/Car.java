@@ -3,7 +3,7 @@ Create class Car with fields type, year of production and engine capacity. Creat
 certain model year  (enter year in the console);
 ordered by the field year.
 */
-package com.softserve.edu_7;
+package com.softserve.edu_07;
 
 public class Car {
     private int yearOfProduction;
