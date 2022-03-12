@@ -1,4 +1,4 @@
-package com.softserve.edu;
+package com.softserve.edu01.edu;
 
 /**
  * Class Appl.
@@ -18,7 +18,7 @@ public class Appl {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		System.out.println("Hello World!");
 		System.out.println("Dev");
 		//
 		int i = 456;
