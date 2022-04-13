@@ -2,7 +2,7 @@ package com.softserve.edu12set;
 
 import java.util.Comparator;
 
-public class Employee { //implements Comparable<Employee> {
+public class Employee implements Comparable<Employee> {
 	
 	public static class ByNameAndId implements Comparator<Employee> {
         @Override
@@ -95,7 +95,7 @@ public class Employee { //implements Comparable<Employee> {
 				+ " ]";
 	}
 
-	//@Override
+	@Override
 	public int compareTo(Employee employee) {
 		//return name.compareTo(employee.getName());
 		return id - employee.getId();
