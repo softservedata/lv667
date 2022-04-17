@@ -17,10 +17,5 @@
 - Create array Bird and add different birds to it.
 - Call fly() method for all of it. Output the information about each type of created bird.
 
-
-
-
-
-
-
+Class Diagram :
 ![ScreenShot](birds_uml.png)
