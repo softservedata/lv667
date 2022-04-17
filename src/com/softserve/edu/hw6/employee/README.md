@@ -12,4 +12,4 @@ Suppose we have a class Employee
 Create an instance of the Employee and Developer class and print in the console information about them using report() method.
 
 Class Diagram :
-![ScreenShot](birds_uml.png)
+![ScreenShot](employee_uml.png)
