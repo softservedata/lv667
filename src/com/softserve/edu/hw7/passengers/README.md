@@ -5,6 +5,3 @@
 ## Task-2 :
 - Develop and test a program’s structure corresponding to the next schema :
 ![ScreenShot](concept_uml.png)
-
-- Result according to a given schema :
-  ![ScreenShot](concept_uml.png)
