@@ -19,5 +19,9 @@
 - Arrange the entire sequence of workers descending the average monthly wage. 
 Output the employee ID, name, and the average monthly wage for all elements of the list.
 
+Main.java Output :
+![ScreenShot](output.png)
+
+
 Class Diagram :
 ![ScreenShot](payment_uml.png)
