@@ -1,8 +1,6 @@
 package com.softserve.edu.hw7.payment;
 
-import java.util.Comparator;
-
-public class SalariedEmployee extends Employee implements Payment, Comparator<SalariedEmployee> {
+public class SalariedEmployee extends Employee implements Payment{
     private String socialSecurityNumber;
     private Double fixedMonthlyPayment;
     private Profession title;
@@ -12,12 +10,11 @@ public class SalariedEmployee extends Employee implements Payment, Comparator<Sa
         setSocialSecurityNumber(socialSecurityNumber);
         setFixedMonthlyPayment(fixedMonthlyPayment);
         setTitle(title);
+        super.setMonthlySalary(calculatePay());
     }
     public String getSocialSecurityNumber() {return socialSecurityNumber;}
     public void setSocialSecurityNumber(String socialSecurityNumber) {this.socialSecurityNumber = socialSecurityNumber;}
-    public Double getFixedMonthlyPayment() {return fixedMonthlyPayment;}
     public void setFixedMonthlyPayment(Double fixedMonthlyPayment) {this.fixedMonthlyPayment = fixedMonthlyPayment;}
-
     public Profession getTitle() {return title;}
     public void setTitle(Profession title) {this.title = title;}
 
@@ -34,10 +31,5 @@ public class SalariedEmployee extends Employee implements Payment, Comparator<Sa
                 ", average monthly salary = " + calculatePay() +
                 ", socialSecurityNumber = '" + getSocialSecurityNumber() + '\'' +
                 '}';
-    }
-
-    @Override
-    public int compare(SalariedEmployee t1, SalariedEmployee t2) {
-        return (int)(t1.calculatePay() - t2.calculatePay());
     }
 }

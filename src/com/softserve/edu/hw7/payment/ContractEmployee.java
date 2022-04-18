@@ -1,15 +1,10 @@
 package com.softserve.edu.hw7.payment;
 
-import java.util.Comparator;
-
-public class ContractEmployee extends Employee implements Payment, Comparator<ContractEmployee> {
+public class ContractEmployee extends Employee implements Payment{
     private String federalTaxIdmember;
     private double workedHours;
     private double hourlyRate;
     private Profession title;
-
-    public Profession getTitle() {return title;}
-    public void setTitle(Profession title) {this.title = title;}
 
     public ContractEmployee(String employeeld, String federalTaxIdmember, int workedHours, int hourlyRate, Profession title){
         super(employeeld);
@@ -17,8 +12,11 @@ public class ContractEmployee extends Employee implements Payment, Comparator<Co
         setWorkedHours(workedHours);
         setHourlyRate(hourlyRate);
         setTitle(title);
+        super.setMonthlySalary(calculatePay());
     }
 
+    public Profession getTitle() {return title;}
+    public void setTitle(Profession title) {this.title = title;}
     public String getFederalTaxIdmember() {return federalTaxIdmember;}
     public void setFederalTaxIdmember(String federalTaxIdmember) {this.federalTaxIdmember = federalTaxIdmember;}
     public double getWorkedHours() {return workedHours;}
@@ -41,10 +39,5 @@ public class ContractEmployee extends Employee implements Payment, Comparator<Co
                 ", workedHours = " + getWorkedHours() +
                 ", hourlyRate = " + getHourlyRate() +
                 '}';
-    }
-
-    @Override
-    public int compare(ContractEmployee t1, ContractEmployee t2) {
-        return (int)(t1.calculatePay() - t2.calculatePay());
     }
 }

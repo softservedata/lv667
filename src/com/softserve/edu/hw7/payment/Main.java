@@ -16,9 +16,16 @@ public class Main {
                 new ContractEmployee("6","490043",150,100,Profession.DOCTOR)
         );
 
-        System.out.println(" -------------------------------- print ArrayList before sorting : ");
+        System.out.println(" -------------------------------- ArrayList before sorting : ");
         staff.forEach(elem -> {
             System.out.println(elem.toString());
         });
+
+        System.out.println(" -------------------------------- ArrayList after sorting : ");
+        Collections.sort(staff, new Employee.SalaryComparator());
+        staff.forEach(elem -> {
+            System.out.println(elem.toString());
+        });
+
     }
 }
