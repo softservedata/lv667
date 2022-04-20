@@ -11,7 +11,7 @@ public class Main {
         Collections.addAll(university,
                 new Student(12, new FullName("Zahar","Luciv"), 18),
                 new Student(78, new FullName("Lubomir","Kurahiv"), 19),
-                new Student(31, new FullName("Bertold","Vovk"), 17),
+                new Student(31, new FullName("Bertold","Vovk"), 21),
                 new Student(112, new FullName("Anya","Kazarevich"), 16));
 
         System.out.println("-------------------------- Unsorted Collection ---------------------------------");

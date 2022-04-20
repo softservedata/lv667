@@ -18,4 +18,8 @@ for the corresponding Person subtype, for example for a student - this could be 
 - In the main(...) method, create two instances of the Student class and 
 output information about them by calling the appropriate methods info() and activity().
 
+Main.java Output :
+![ScreenShot](output.png)
+
+Class Diagram :
 ![ScreenShot](student_uml.png)

@@ -10,7 +10,6 @@ public abstract class Person {
     }
 
     public Person(){
-
     }
 
     public FullName getFullname() {

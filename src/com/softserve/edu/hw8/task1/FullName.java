@@ -10,6 +10,7 @@ public class FullName {
     };
 
     public FullName(){
+
     };
 
     public String getFirstName() {
