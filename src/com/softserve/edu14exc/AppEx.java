@@ -3,8 +3,9 @@ package com.softserve.edu14exc;
 public class AppEx {
 
     static double safeSqrt(double x) throws ArithmeticException {
-        if (x < 0.0)
+        if (x < 0.0) {
             throw new ArithmeticException();
+        }
         return Math.sqrt(x);
     }
 
