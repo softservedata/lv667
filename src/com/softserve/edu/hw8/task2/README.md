@@ -12,7 +12,9 @@
 - Print all three values in the console using method getValue from Wrapper class.
   
 Main.java Output :
+
 ![ScreenShot](output.png)
 
 Class Diagram :
+
 ![ScreenShot](wrapper_uml.png)
