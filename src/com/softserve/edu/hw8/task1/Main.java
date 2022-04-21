@@ -51,6 +51,5 @@ public class Main {
                 System.out.println(String.format("student info -> %s, activity -> %s", ((Student)elem).info(),((Student)elem).activity()));
             }
         });
-
     }
 }

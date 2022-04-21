@@ -12,6 +12,7 @@ public class SalariedEmployee extends Employee implements Payment{
         setTitle(title);
         super.setMonthlySalary(calculatePay());
     }
+
     public String getSocialSecurityNumber() {return socialSecurityNumber;}
     public void setSocialSecurityNumber(String socialSecurityNumber) {this.socialSecurityNumber = socialSecurityNumber;}
     public void setFixedMonthlyPayment(Double fixedMonthlyPayment) {this.fixedMonthlyPayment = fixedMonthlyPayment;}
