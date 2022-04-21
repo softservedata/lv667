@@ -15,4 +15,4 @@ Main.java Output :
 ![ScreenShot](output.png)
 
 Class Diagram :
-![ScreenShot](payment_uml.png)
+![ScreenShot](wrapper_uml.png)
