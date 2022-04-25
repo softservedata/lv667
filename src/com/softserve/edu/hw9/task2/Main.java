@@ -32,7 +32,6 @@ public class Main {
         // 3-Remove from the map person whose firstName is ”Orest” (or other). Print result.
         List<String> namesToRemove = new ArrayList<String>(List.of("Sarah","Ernest","Mark","Mapelli","Meghan"));
         for (String name : namesToRemove) {
-            System.out.println(name + " : " + personMap.values());
             personMap.values().remove(name);
         }
 
