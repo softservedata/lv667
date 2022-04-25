@@ -10,4 +10,5 @@ Create map personMap and add to it ten persons of type <String, String> (lastNam
 - Remove from the map person whose firstName is `Orest` (or other). Print result.
 
 Output :
+
 ![ScreenShot](hw9-t2-output.png)
