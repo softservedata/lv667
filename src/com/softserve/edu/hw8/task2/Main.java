@@ -8,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
         List<Wrapper> container = new ArrayList<>();
         Collections.addAll(container,
-                new Wrapper(Integer.valueOf(123)),
-                new Wrapper(String.valueOf("My string")),
-                new Wrapper(Boolean.valueOf(true))
+                new Wrapper<>(Integer.valueOf(123)),
+                new Wrapper<>(String.valueOf("My string")),
+                new Wrapper<>(Boolean.valueOf(true))
         );
 
         container.forEach(obj -> {
