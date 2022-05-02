@@ -6,6 +6,7 @@ import java.util.Scanner;
 interface MyFunctional {
 	double f(double x);
 	//double g(double x);
+	//boolean equals(Object obj);
 }
 
 class MyF implements MyFunctional {
