@@ -8,7 +8,7 @@ public class Hw1 {
         //Flower bed is shaped like a circle.
         // Calculate the perimeter and area by entering the radius.
         // Output obtained results
-
+//////////////////////////////////////////////////////////////
         int r = 20;
 
         double s, perimeter;
