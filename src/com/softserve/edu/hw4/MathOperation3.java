@@ -31,9 +31,8 @@ public class MathOperation3 {
             if (arr[k] > 0) {
                 count++;
                 numberOfSecondPositiveNum = k;
-            } else {
-                continue;
-            }
+            } else continue;
+
 
         }
         switch (count) {

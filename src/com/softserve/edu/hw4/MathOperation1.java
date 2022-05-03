@@ -14,7 +14,7 @@ public class MathOperation1 {
         while(a){
             System.out.println("Enter the number of month");
             num=Integer.parseInt(s.nextLine());
-            if(num>0 & num< arr.length){
+            if(num>0 & num<=arr.length){
                 System.out.println("This month has "+ arr[num-1]+" days. "+"Its "+num+" month");
                 a=false;
             }
