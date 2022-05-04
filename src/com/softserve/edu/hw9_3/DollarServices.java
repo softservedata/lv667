@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class DollarServices {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
         String pattern1 = "[${1}][0-9]+\\.[0-9]{2}";
 
