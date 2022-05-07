@@ -17,40 +17,42 @@ public class Appl {
             System.out.println("[0] - EXIT");
 
             System.out.print  ("\r\nInput : ");
-            select = cin.nextInt();
-
-            //Cleaning buffer
-            String clean = cin.nextLine();
+            try {
+                select = Integer.parseInt(cin.nextLine());
+            }
+            catch (NumberFormatException e){
+                select = 999;
+            }
 
             if(select == 1) {
                 Task1();
 
                 System.out.println("\r\nPress any key to back");
-                clean = cin.nextLine();
+                //clean = cin.nextLine();
             }
 
             else if(select == 2) {
                 Task2();
 
                 System.out.println("\r\nPress any key to back");
-                clean = cin.nextLine();
+                //clean = cin.nextLine();
             }
 
             else if(select == 3) {
                 Task3();
 
                 System.out.println("\r\nPress any key to back");
-                clean = cin.nextLine();
+                //clean = cin.nextLine();
             }
 
             else if(select == 0) break;
 
             else
             {
-                System.out.println("Unknown command please try again");
+                System.out.println("Unknown command please try again\n");
                 System.out.println("Press any key to back");
 
-                clean = cin.nextLine();
+                //clean = cin.nextLine();
             }
         }
 
@@ -58,6 +60,7 @@ public class Appl {
 
     public static void Task1() {
         Scanner cin = new Scanner(System.in);
+        double radius = 0;
 
         double pi = 3.14159265;
 
@@ -65,16 +68,21 @@ public class Appl {
         System.out.println("Flower bed is shaped like a circle");
 
         System.out.print  ("Input radius of circle: ");
-        double radius = cin.nextDouble();
-
-        //Cleaning buffer
-        String clean = cin.nextLine();
+        while (cin.hasNext()) {
+            try {
+                radius = Double.parseDouble(cin.nextLine());
+                break;
+            } catch (Exception e) {
+                System.out.println("Input is incorrect, please try again");
+                System.out.print  ("Input radius of circle: ");
+            }
+        }
 
         System.out.println(" ");
-        System.out.println("Radius    : " + radius + " m");
-        System.out.println("Diameter  : " + radius * 2.0 + " m");
-        System.out.println("Perimeter : " + radius * 2.0 * pi + " m");
-        System.out.println("Area      : " + radius * radius * pi + " m2 \r\n" );
+        System.out.println("Radius    : " + radius + " \t\t\tm");
+        System.out.println("Diameter  : " + radius * 2.0 + " \t\t\tm");
+        System.out.println("Perimeter : " + radius * 2.0 * pi + " \t\tm");
+        System.out.println("Area      : " + radius * radius * pi + " \tm2 \r\n" );
 
         System.out.println("ZZZZZZZZZZ _END_ ZZZZZZZZZZ");
     }
