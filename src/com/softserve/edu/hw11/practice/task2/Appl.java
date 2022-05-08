@@ -1,2 +1,4 @@
-package com.softserve.edu.hw11.practice.task1;public class Appl {
+package com.softserve.edu.hw11.practice.task2;
+
+public class Appl {
 }

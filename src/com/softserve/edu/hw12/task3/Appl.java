@@ -8,7 +8,7 @@ public class Appl {
                 System.out.println("Thread number two");
             }
             Thread t3 = new Thread(() -> {
-                for(int i=0; i<3; i++){
+                for(int i=0; i<5; i++){
                     System.out.println("Thread number three");
                 }
             });

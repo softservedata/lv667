@@ -1,4 +1,4 @@
-package com.softserve.edu.hw11.practice;
+package com.softserve.edu.hw11.practice.task1;
 
 public class NumberReader {
 }

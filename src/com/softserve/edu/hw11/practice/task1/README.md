@@ -1,12 +1,16 @@
 # Java Core
 
-**Homework-12 Threads. IOFiles**
+**Homework-11 ExceptionsFile**
 
 ## Task-1:
 
-Run three threads and output there different messages for 5 times. 
-The third thread supposed to start after finishing working of the two previous threads.
+Create a method for calculating the area of a rectangle -> int squareRectangle (int a, int b).
+
+Input values a and b from console and :
+ - method should throw an exception if the user enters negative value.
+ - Check the squareRectangle method in the method main.
+ - Check to input nonnumeric value.
 
 Output :
 
-![ScreenShot](hw12-t1-output.png)
+![ScreenShot](hw11-p1-output.png)
