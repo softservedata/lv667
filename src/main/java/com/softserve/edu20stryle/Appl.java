@@ -1,6 +1,6 @@
 /*
 * Copyright (c) Sun Microsystems, Inc.
-* This software is …
+* This software is
 */
 package com.softserve.edu20stryle;
 
