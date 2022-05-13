@@ -1,4 +1,4 @@
-package com.softserve.edu.String_RegularExpressions.Task1;
+package com.softserve.edu.hw_String_RegularExpressions.Task1;
 
 import java.util.ArrayList;
 import java.util.Scanner;

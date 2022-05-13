@@ -1,4 +1,4 @@
-package com.softserve.edu.String_RegularExpressions.Task_3;
+package com.softserve.edu.hw_String_RegularExpressions.Task_3;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
