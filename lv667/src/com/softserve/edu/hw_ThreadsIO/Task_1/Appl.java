@@ -2,7 +2,7 @@ package com.softserve.edu.hw_ThreadsIO.Task_1;
 
 
 public class Appl {
-    public static Object monitor = new Object();
+    public static final Object monitor = new Object();
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Main thread Start");
