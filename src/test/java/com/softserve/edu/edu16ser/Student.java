@@ -1,4 +1,4 @@
-package com.softserve.edu16ser;
+package com.softserve.edu.edu16ser;
 
 class Student { //implements Serializable {
 	private static final long serialVersionUID = 1L;

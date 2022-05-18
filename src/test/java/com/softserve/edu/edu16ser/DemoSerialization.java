@@ -1,4 +1,4 @@
-package com.softserve.edu16ser;
+package com.softserve.edu.edu16ser;
 
 //import java.io.File;
 //import java.io.FileInputStream;
@@ -8,8 +8,6 @@ package com.softserve.edu16ser;
 //import java.io.ObjectOutputStream;
 
 import com.google.gson.Gson;
-
-import java.io.*;
 
 public class DemoSerialization {
 	/*- Binary
