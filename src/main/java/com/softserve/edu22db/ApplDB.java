@@ -29,7 +29,7 @@ public class ApplDB {
 	public static void main(String[] args) throws SQLException {
 		System.out.println("Start...");
 		//DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-		DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+		//DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 		con = DriverManager.getConnection(URL, username, password);
 		if (con != null) {
 			System.out.println("Connection Successful! \n");
@@ -59,13 +59,15 @@ public class ApplDB {
 		/*
 		// MySQL
 		// String query = "INSERT INTO temp (name,login,password,age) VALUES ('Ivan','iva','qwerty',21);";
-		String query = "INSERT INTO temp (name,login,password,age) VALUES ('Petro','pet','123456',22);";
+		String query = "INSERT INTO temp (name,login,password,age) VALUES ('Petro4','pet3','1234562',22);";
 		//
 		// PostGreSQL
 		//String query = "INSERT INTO temp (id,name,login,password,age) VALUES (2,'Ivan','iva','qwerty',21);";
 		//String query = "INSERT INTO temp (id,name,login,password,age) VALUES (1,'Petro','pet','123456',22);";
 		//
+		//con.setAutoCommit(false);
 		st.execute(query);
+		//con.rollback();
 		*/
 		//st.execute("INSERT INTO temp (id,name,login,password,age) VALUES (42,'Ira','ira','asdfgh',23);");
 		//st.execute("INSERT INTO temp (name,login,password,age) VALUES ('Ira','ira','asdfgh',23);");
@@ -96,6 +98,8 @@ public class ApplDB {
 			rs.close();
 		}
 		// */
+		//con.commit(); // Close transaction
+		//
 		if (st != null) {
 			st.close();
 		}
