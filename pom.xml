@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.softserve.edu</groupId>
-    <artifactId>lv667mvn</artifactId>
+    <artifactId>lv667w</artifactId>
     <version>1.0</version>
 
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>${project.artifactId}</name>
     <url>http://maven.apache.org</url>
@@ -88,9 +88,19 @@
             <version>2.9.0</version>
         </dependency>
 
+        <!-- - - - - - Web - - - - - -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
+
         <plugins>
 
             <plugin>
@@ -128,6 +138,16 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+
 
         </plugins>
     </build>
