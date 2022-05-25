@@ -67,6 +67,12 @@ public class Login extends HttpServlet {
         } else {
             out.println("<br><font size=\"5\" color='red'> Message = " + result + "</font><br>");
         }
+        //
+        out.println("<h1>names</h1><br><br><br>");
+        DBService service = new DBService();
+        for (String s : service.getNames()) {
+            out.println(s + "<br>");
+        }
         out.println("</body>");
         out.println("</html>");
         out.close();
