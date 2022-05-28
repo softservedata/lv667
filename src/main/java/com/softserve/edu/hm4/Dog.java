@@ -1,7 +1,5 @@
 package com.softserve.edu.hm4;
 
-import java.util.Comparator;
-
 public class Dog {
 
     private Breed breed;

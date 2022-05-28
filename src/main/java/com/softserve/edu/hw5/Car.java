@@ -1,6 +1,4 @@
 package com.softserve.edu.hw5;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Car implements Comparable<Car>{
     private int year;
