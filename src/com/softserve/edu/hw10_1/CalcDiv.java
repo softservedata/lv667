@@ -9,18 +9,23 @@ public class CalcDiv {
         double res1 = 0.0;
         try {
             res1 = x / y;
-        } catch (ArithmeticException e1) {
-            System.out.println("Error catched division by Zero + " + e1.getMessage());
+            return res1;
         }
-        return res1;
+        catch (ArithmeticException e1) {
+            System.out.println("Error catched division by Zero + " + e1.getMessage());
+            return -1;
+        }finally {
+            System.out.println("finnaly");
+
+        }
+
     }
     //ловимо ділення на 0 з дабл числами
     public static double div2(double x, double y) throws ArithmeticException {
         double res2 = 0.0;
         if (y == 0.0) {
             throw new ArithmeticException();
-        }
-        return res2 = x / y;
+        }return res2 = x / y;
     }
 
 
@@ -39,9 +44,11 @@ public class CalcDiv {
             res3 = div2(d1,d2);
         } catch (ArithmeticException e1) {
             System.out.println("Division by 0 " + e1);
-            res3 = -0.0;
-        }
-        System.out.println("div2 (d1/d2) = " + res3);
+             res3= -1.0;
+        }finally {
+            System.out.println("finnaly");
+        }System.out.println("div2 (d1/d2) = " + res3);
+
     }
 }
 

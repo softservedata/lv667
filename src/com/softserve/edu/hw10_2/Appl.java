@@ -22,12 +22,18 @@ public class Appl {
         } catch (NumberFormatException e1) {
             System.out.println("Not string value " + e1);
            // e1.printStackTrace();
+            return new int[]{-1};
         }catch (ArrayIndexOutOfBoundsException e2){
             System.out.println(e2);
          //   e2.printStackTrace();
+            return new int[]{-2};
         } catch (IndexOutOfBoundsException e3){
             System.out.println(e3);
          //   e3.printStackTrace();
+            return new int[]{-3};
+        }finally {
+            System.out.println("finnaly");
+
         }
         return arr;
     }
